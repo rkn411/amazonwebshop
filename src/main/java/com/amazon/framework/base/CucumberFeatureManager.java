@@ -3,6 +3,7 @@ package com.amazon.framework.base;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -53,7 +54,7 @@ public class CucumberFeatureManager extends DriverManager {
 		Configuration configuration = new Configuration(reportOutputDirectory, projectName);
 		configuration.setBuildNumber(buildNumber);
 		configuration.addClassifications("Execution", propFile.getProperty("Execution"));
-		configuration.addClassifications("OS", propFile.getProperty("OS"));
+		//configuration.addClassifications("OS", propFile.getProperty("OS"));
 		configuration.setSortingMethod(SortingMethod.NATURAL);
 		configuration.addPresentationModes(PresentationMode.EXPAND_ALL_STEPS);
 		configuration.setTrendsStatsFile(new File("target/test-classes/featurebuildtrends.json"));

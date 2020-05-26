@@ -7,7 +7,7 @@ import com.amazon.framework.base.DriverManager;
 public abstract class BasePage {
 	
 	public BasePage(){
-		PageFactory.initElements(DriverManager.getDriver(), this);;
+		PageFactory.initElements(DriverManager.getDriver(), this);
 	}
 	
 	public abstract boolean isPageDisplayed();
