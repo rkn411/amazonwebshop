@@ -46,7 +46,7 @@ public class CucumberFeatureManager extends DriverManager {
 		File reportOutputDirectory = new File("reports/cucumber-reports");
 		List<String> jsonFiles = new ArrayList<String>();
 		jsonFiles.add("reports/cucumber-reports/cucumber-html-report.json");
-		String path = System.getProperty("user.dir") + "/src/main/java/com/ml/amazon";
+		String path = System.getProperty("user.dir") + "/src/main/java/com/amazon";
 		PropertiesFile propFile = new PropertiesFile(path + "/config/reportconfig.properties");
 		String buildNumber = propFile.getProperty("BuildNumber");
 		String projectName = "AmazonWebShop";

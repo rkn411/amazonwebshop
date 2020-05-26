@@ -1,40 +1,45 @@
 package com.amazon.framework.utilities;
 
-import java.io.File;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import com.amazon.framework.base.DriverManager;
-import io.cucumber.core.api.Scenario;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class UtilityMethods {
 
-	/**
-	 * This method is used for getting name of child directory of specifieddirectory
-	 * 
-	 * @param path
-	 *            - path of directory
-	 * @return - child directory name
-	 */
-	public static String getChildDirectoryName(String path) {
-		File file = new File(path);
-
-		File[] files = file.listFiles();
-
-		for (File f : files) {
-			if (f.isDirectory()) {
-				return f.getName();
-			}
-		}
-		return null;
+	public enum SelectionType {
+		INDEX, VALUE, TEXT;
 	}
 
-	public static void takeScreenShot(Scenario scenario, String... screenShotName) {
-		final byte[] screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
-		if (screenShotName.length > 0) {
-			scenario.embed(screenshot, "image/png", screenShotName[0]);
+	/**
+	 * This utility method is used to select options from drop down
+	 * 
+	 * @param dropDown
+	 *            - Takes drop down web element
+	 * @param option
+	 *            - Option which has to be selected from drop down
+	 * @param type
+	 *            - Selection type (Index or Value or Text)
+	 */
+	public static Select selectOptionFromDropDown(WebElement dropDown, String option, SelectionType type) {
+		Select s = new Select(dropDown);
+		if (type.toString().equalsIgnoreCase("Index")) {
+			s.selectByIndex(Integer.parseInt(option));
+		} else if (type.toString().equalsIgnoreCase("Value")) {
+			s.selectByValue(option);
 		} else {
-			scenario.embed(screenshot, "image/png", scenario.getName());
+			s.selectByVisibleText(option);
 		}
+		return s;
+	}
+
+	/**
+	 * This method is used get selected option from drop down
+	 * 
+	 * @param dropDown
+	 * @return
+	 */
+	public static String getDropDownSelectedOption(WebElement dropDown) {
+		Select s = new Select(dropDown);
+		return s.getFirstSelectedOption().getText();
 	}
 
 }
