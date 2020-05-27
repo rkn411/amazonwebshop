@@ -6,6 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import com.amazon.framework.base.DriverManager;
+import com.amazon.framework.utilities.DriverWait.WaitTime;
 
 public class UIWrappers {
 	/**
@@ -19,6 +20,7 @@ public class UIWrappers {
 	public static void clickOnElement(WebElement element, String fieldName){
 		try {
 			element.click();
+			DriverWait.isElementDisplayed(element, WaitTime.ONEMINUTE);
 		} catch (NoSuchElementException e) {
 			Logger.getLogger(UtilityMethods.class).error(e);
 			Assert.assertTrue(false, fieldName + ":Element not found");

@@ -2,6 +2,10 @@ package com.amazon.framework.utilities;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import java.util.LinkedList;
+import java.util.Set;
+
+import com.amazon.framework.base.DriverManager;
 
 public class UtilityMethods {
 
@@ -40,6 +44,11 @@ public class UtilityMethods {
 	public static String getDropDownSelectedOption(WebElement dropDown) {
 		Select s = new Select(dropDown);
 		return s.getFirstSelectedOption().getText();
+	}
+	
+	public static void switchToLatestWindow() {
+		Set<String> windows=DriverManager.getDriver().getWindowHandles();
+		DriverManager.getDriver().switchTo().window(new LinkedList<String>(windows).get(1));
 	}
 
 }

@@ -11,6 +11,8 @@ public class GlobalMenuPage  extends BasePage {
 
 	@FindBy(xpath = "//a[@id='nav-cart']")
 	private WebElement cartIcon;
+	
+	@FindBy(id="nav-cart-count") private WebElement cartItemsCount;
 
 	@FindBy(id = "twotabsearchtextbox")
 	private WebElement searchTxtField;
@@ -27,5 +29,14 @@ public class GlobalMenuPage  extends BasePage {
 		inputText(searchTxtField, productName, "Search Input Field");
 		clickOnElement(searchIcon, "Search Icon");
 	}
+	
+	public void clickOnCartIcon() {
+		clickOnElement(cartIcon,"cartIcon");
+	}
+	
+	public int getCartItemsCount() {
+		return Integer.parseInt(cartItemsCount.getText());
+	}
+	
 
 }

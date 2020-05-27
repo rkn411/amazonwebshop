@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		strict = false,
 		features = "src/test/resources/features",
 		glue = {"com.amazon.stepdefinitions"},
-		tags = {"@SearchProduct"},
+		tags = {"@SearchProduct,@SearchProduct"},
 		plugin = {"html:reports/cucumber-reports/cucumber-pretty",
 				"json:reports/cucumber-reports/cucumber-html-report.json",
 				"usage:reports/cucumber-reports/cucumber-usage.json",
