@@ -23,4 +23,8 @@ public class SearchResultsStepDefinitions {
 	public void user_should_select_product_with_author_from_displayed_products(String productName, String authorName) {
 		searchResult.clickProductInSearchResult(productName, authorName);
 	}
+	@Then("User should select product {string} from displayed products")
+	public void user_should_select_product_from_displayed_products(String productName) {
+		searchResult.clickProductInSearchResult(productName);
+	}
 }

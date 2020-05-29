@@ -1,8 +1,13 @@
 package com.amazon.framework.utilities;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
 import com.amazon.framework.base.DriverManager;
 
 public class DriverWait {
@@ -40,13 +45,6 @@ public class DriverWait {
 		} while (((after - before) / 1000) <= waitTime.getTime());
 		return false;
 	}
-
-	/**
-	 * 
-	 * @param locator
-	 * @return
-	 */
-
 	/**
 	 * 
 	 * @param locator
@@ -76,7 +74,25 @@ public class DriverWait {
 		try {
 			Thread.sleep(1000 * waitTime);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 		}
+	}
+	/**
+	 * method to wait for element presence
+	 * @param elementLoc
+	 * @param fieldName
+	 * @param waitTime
+	 * @return
+	 */
+	public static WebElement waitForPresenceOfElement(String elementLoc, String fieldName,WaitTime waitTime) {
+		WebElement element = null;
+		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), waitTime.getTime());
+		try {
+			element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(elementLoc)));
+		} catch (NoSuchElementException e) {
+			Logger.getLogger(UtilityMethods.class).error(e);
+			Assert.assertTrue(false, fieldName + ":unable to find the element");
+		}
+		return element;
 	}
 }

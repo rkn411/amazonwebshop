@@ -16,8 +16,9 @@ public class GlobalMenuStepDefinitions {
 		globalMenu.searchProduct(productName);
 	}
 	
-	@Then("user click on cart icon menu")
+	@Then("User click on cart icon menu")
 	public void user_click_on_cart_icon_menu() {
 		globalMenu.clickOnCartIcon();
 	}
+
 }
