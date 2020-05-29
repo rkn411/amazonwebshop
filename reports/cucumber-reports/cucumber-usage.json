@@ -1,0 +1,295 @@
+[
+  {
+    "source": "User is on login page",
+    "steps": [
+      {
+        "name": "User is on login page",
+        "aggregatedDurations": {
+          "median": 0.775719998,
+          "average": 0.777939444
+        },
+        "durations": [
+          {
+            "duration": 1.044473519,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:4"
+          },
+          {
+            "duration": 0.51584426,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:4"
+          },
+          {
+            "duration": 0.558630043,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:4"
+          },
+          {
+            "duration": 0.992809953,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User login with valid credentials {string} and {string}",
+    "steps": [
+      {
+        "name": "User login with valid credentials \"9701691990\" and \"Nithin$4\"",
+        "aggregatedDurations": {
+          "median": 3.750011164,
+          "average": 4.075733943
+        },
+        "durations": [
+          {
+            "duration": 3.589860936,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:5"
+          },
+          {
+            "duration": 3.910161391,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:5"
+          },
+          {
+            "duration": 5.747561859,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:5"
+          },
+          {
+            "duration": 3.055351584,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User is on Dashboard Page",
+    "steps": [
+      {
+        "name": "User is on Dashboard Page",
+        "aggregatedDurations": {
+          "median": 0.024287500,
+          "average": 0.035527999
+        },
+        "durations": [
+          {
+            "duration": 0.019567871,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:9"
+          },
+          {
+            "duration": 0.023578321,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:19"
+          },
+          {
+            "duration": 0.073969125,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:32"
+          },
+          {
+            "duration": 0.024996678,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User enter prodcut name {string} in search field and click on search icon",
+    "steps": [
+      {
+        "name": "User enter prodcut name \"java programming books\" in search field and click on search icon",
+        "aggregatedDurations": {
+          "median": 2.461496118,
+          "average": 2.254681371
+        },
+        "durations": [
+          {
+            "duration": 2.441475054,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:10"
+          },
+          {
+            "duration": 2.481517181,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:20"
+          },
+          {
+            "duration": 0.309917932,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:33"
+          },
+          {
+            "duration": 3.785815316,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Application should display list of products matched with search content",
+    "steps": [
+      {
+        "name": "Application should display list of products matched with search content",
+        "aggregatedDurations": {
+          "median": 0.035187155,
+          "average": 0.035187155
+        },
+        "durations": [
+          {
+            "duration": 0.035187155,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User should select product {string} with author {string} from displayed products",
+    "steps": [
+      {
+        "name": "User should select product \"Java - The Complete Reference\" with author \"Herbert Schildt\" from displayed products",
+        "aggregatedDurations": {
+          "median": 3.433223324,
+          "average": 3.433223324
+        },
+        "durations": [
+          {
+            "duration": 3.317968359,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:21"
+          },
+          {
+            "duration": 3.548478288,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User add product to the cart by cliking on on add to cart button",
+    "steps": [
+      {
+        "name": "User add product to the cart by cliking on on add to cart button",
+        "aggregatedDurations": {
+          "median": 2.157490653,
+          "average": 2.140651422
+        },
+        "durations": [
+          {
+            "duration": 2.157490653,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:22"
+          },
+          {
+            "duration": 2.165611635,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:35"
+          },
+          {
+            "duration": 2.098851979,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:51"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User click on cart icon menu",
+    "steps": [
+      {
+        "name": "User click on cart icon menu",
+        "aggregatedDurations": {
+          "median": 1.605091849,
+          "average": 1.605091849
+        },
+        "durations": [
+          {
+            "duration": 0.437271665,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:23"
+          },
+          {
+            "duration": 2.772912032,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User should see added product {string} in shopping cart list",
+    "steps": [
+      {
+        "name": "User should see added product \"Java - The Complete Reference\" in shopping cart list",
+        "aggregatedDurations": {
+          "median": 0.601455088,
+          "average": 0.601455088
+        },
+        "durations": [
+          {
+            "duration": 0.601455088,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:24"
+          }
+        ]
+      },
+      {
+        "name": "User should see added product \"A Textbook of Java Programming\" in shopping cart list",
+        "aggregatedDurations": {
+          "median": 0.040541194,
+          "average": 0.040541194
+        },
+        "durations": [
+          {
+            "duration": 0.040541194,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User should select product {string} from displayed products",
+    "steps": [
+      {
+        "name": "User should select product \"A Textbook of Java Programming\" from displayed products",
+        "aggregatedDurations": {
+          "median": 2.552764594,
+          "average": 2.552764594
+        },
+        "durations": [
+          {
+            "duration": 2.552764594,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User delete product {string} from the shopping cart",
+    "steps": [
+      {
+        "name": "User delete product \"A Textbook of Java Programming\" from the shopping cart",
+        "aggregatedDurations": {
+          "median": 0.196829079,
+          "average": 0.196829079
+        },
+        "durations": [
+          {
+            "duration": 0.196829079,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User should not see deleted product {string} from shopping cart",
+    "steps": [
+      {
+        "name": "User should not see deleted product \"A Textbook of Java Programming\" from shopping cart",
+        "aggregatedDurations": {
+          "median": 0.024153802,
+          "average": 0.024153802
+        },
+        "durations": [
+          {
+            "duration": 0.024153802,
+            "location": "file:src/test/resources/features/searchaddupdateproduct.feature:55"
+          }
+        ]
+      }
+    ]
+  }
+]
